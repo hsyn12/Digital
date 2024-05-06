@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tr.xyz.TestTimeDigits" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-05-06T12:42:44" hostname="DESKTOP-HPL07ER" time="0.106">
+  <properties/>
+  <testcase name="testCreation()" classname="tr.xyz.TestTimeDigits" time="0.093"/>
+  <testcase name="testPlus()" classname="tr.xyz.TestTimeDigits" time="0.003"/>
+  <testcase name="testBetween()" classname="tr.xyz.TestTimeDigits" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
