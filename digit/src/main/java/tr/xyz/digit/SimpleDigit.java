@@ -45,32 +45,24 @@ public class SimpleDigit implements Digit {
 		}
 		if (value < min) {
 			var interval = min - value;
-			if (interval < range) {
+			if (interval <= range) {
 				result[0] = (max - interval) + 1;
 				result[1] = -1;
 			}
-			else if (interval > range) {
+			else {
 				result[0] = ((max + 1) - range % interval);
 				result[1] = -(interval / range);
-			}
-			else {
-				result[0] = min;
-				result[1] = -1;
 			}
 		}
 		else {
 			var interval = value - max;
-			if (interval < range) {
+			if (interval <= range) {
 				result[0] = (min + interval) - 1;
 				result[1] = 1;
 			}
-			else if (interval > range) {
+			else {
 				result[0] = (min + interval % range) - 1;
 				result[1] = value / range;
-			}
-			else {
-				result[0] = min;
-				result[1] = 1;
 			}
 		}
 		return result;
